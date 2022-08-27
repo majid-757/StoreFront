@@ -14,7 +14,7 @@ class Product(models.Model):
     inventory = models.IntegerField()
     last_update = models.DateTimeField(auto_now=True)
     collection = models.ForeignKey(Collection, on_delete=models.PROTECT)
-    
+    promations = models.ManyToManyField('Promation')
     
 
 
@@ -92,7 +92,9 @@ class CartItem(models.Model):
 
 
 
-
+class Promation(models.Model):
+    description = models.CharField(max_length=255)
+    discount = models.FloatField()
 
 
 
