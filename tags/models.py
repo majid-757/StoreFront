@@ -30,5 +30,5 @@ class LikedItem(models.Model):
     object_id = models.PositiveIntegerField()
     content_object = GenericForeignKey()
     article = models.TextField()
-
+    title = models.TextField()
 
