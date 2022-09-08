@@ -32,3 +32,4 @@ class LikedItem(models.Model):
     article = models.TextField()
     title = models.CharField()
     description = models.TextField()
+    inventory = models.IntegerField()
