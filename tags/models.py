@@ -33,3 +33,4 @@ class LikedItem(models.Model):
     title = models.CharField()
     description = models.TextField()
     inventory = models.IntegerField()
+    label = models.CharField(max_length=255)
